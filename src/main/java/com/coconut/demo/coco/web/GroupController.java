@@ -42,9 +42,9 @@ public class GroupController {
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    @PostMapping("/group")
+    @PostMapping("/addGroup")
     ResponseEntity<Group> createGroup(@Valid @RequestBody Group group) throws URISyntaxException{
-        log.info("Request to crete group: {}", group);
+        log.info("Request to create group: {}", group);
         Group result = groupRepository.save(group);
         return ResponseEntity.ok().body(result);
     }
