@@ -1,4 +1,4 @@
-package com.coconut.demo.coco.web;
+package com.coconut.demo.coco.controller;
 
 import com.coconut.demo.coco.model.Group;
 import com.coconut.demo.coco.model.GroupRepository;
